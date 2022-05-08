@@ -8,7 +8,7 @@ To run the site, you must have your own k8s cluster. In the beginning, clone thi
 ## Required resources
 To launch the site, you will need the following amount of resources:
 `requests.cpu: 1/1`, `requests.memory: 1814Mi/2Gi`, `limits.cpu: 1900m/3`,
-`limits.memory: 3628Mi/4Gi`
+`limits.memory: 3628Mi/4Gi`.
 To find out the amount of resources consumed, use the command:
 ```
 > kubectl get resourcequotas
