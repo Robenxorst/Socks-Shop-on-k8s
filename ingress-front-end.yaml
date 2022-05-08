@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: k8s-sth58.srequest.ru
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: k8s-sth58.srequest.ru
+      http:
+        paths:
+          - pathType: Prefix
+            backend:
+              service:
+                name: front-end
+                port:
+                  number: 80
+            path: /
